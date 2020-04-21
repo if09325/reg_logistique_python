@@ -20,7 +20,7 @@ mylogit1.fit(X_independent,Y_dependent)
 #Affichage 
 print("coef : ", mylogit1.coef_)
 
-#Modèle de Reg Logistique avec scikit-learn 
+#Modèle de Reg Logistique avec statsmodels
 mylogit2 = sm.Logit(Y_dependent,X_independent)
 #Affichage 
 print(mylogit2.fit().summary())
